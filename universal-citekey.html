@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Universal Citekey</title>
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="universal-citekey.js"></script>
+    <link rel="stylesheet" type="text/css" href="universal-citekey.css" />
+</head>
+
+<body onload='bodyDidLoad();' isNew='YES'>
+
+<div class='box'>
+
+
+<h4>Metadata Input</h4>
+
+<p class='input'>
+<label id='author-label' for='author-input'>First Author Last Name:</label>
+<input type='text' id='author-input' value='Smith' onKeyUp='update_universal_citekeydisplay()' />
+</p>
+
+<p class='input'>
+<label id='year-label' for='year-input'>Publication Year:</label>
+<input type='text' id='year-input' value='1997' onKeyUp='update_universal_citekeydisplay()' />
+</p>
+
+<p class='input'>
+<label id='doi-label' for='doi-input'>DOI:</label>
+<input type='text' id='doi-input' value='11.1234/abc.222.987654' onKeyUp='update_universal_citekeydisplay()' />
+</p>
+
+<p class='input'>
+<label id='title-label' for='title-input'>Title:</label>
+<input type='text' id='title-input' value='Direct Evidence Of Flying Birds Found In Sky Pictures' onKeyUp='update_universal_citekeydisplay()' />
+</p>
+
+</div>
+
+<div class='box'>
+
+<h4>Citekey Results</h4>
+
+<p class='output'>
+<label id='universal-citekey-label'>Universal Citekey:</label>
+<span id='universal-citekey-output'>n/a</span>
+</p>
+
+<p class='output'>
+<label id='uc-doi-label'>Universal Citekey From DOI:</label>
+<span id='uc-doi-output'>n/a</span>
+</p>
+
+<p class='output'>
+<label id='uc-title-label'>Universal Citekey From Title:</label>
+<span id='uc-title-output'>n/a</span>
+</p>
+
+</div>
+
+<div class='box'>
+<p><a href='universal-citekey.js'>Show Javascript Source</a></p>
+</div>
+
+</body>
+
+</html>
