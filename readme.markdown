@@ -143,11 +143,11 @@ The 2-letter hash is in the range ba, bb,..., kz, determined based on the intege
 
 **Universal Citekey from Title**
 
-The 2-letter hash is in the range ta, tb,..., wz, determined based on the integer `n_2`, which has a value between 0 and 102, and as follows:
+The 2-letter hash is in the range ta, tb,..., wz, determined based on the integer `n_2`, which has a value between 0 and 103, and as follows:
 
 * the title string is transformed into its equivalent canonical string, all lowercase
 * `n_1` = CRC32 applied to the title string
-* `n_2 = n_1 mod 102`
+* `n_2 = n_1 mod 104`
 * `n_3 = n_2 div 26` --> first letter of the suffix (t=0, u=1, v=2, w=3)
 * `n_4 = n_2 mod 26` --> second letter of the suffix (a=0, b=1,..., z=25)
 
