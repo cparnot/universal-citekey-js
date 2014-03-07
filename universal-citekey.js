@@ -45,9 +45,9 @@ function update_universal_citekeydisplay(argument)
 	var uc_span = document.getElementById('universal-citekey-output');
 	var uc_doi_span = document.getElementById('uc-doi-output');
 	var uc_title_span = document.getElementById('uc-title-output');
-	uc_span.innerText = uc;
-	uc_doi_span.innerText   = uc_doi;
-	uc_title_span.innerText = uc_title;
+	uc_span.innerHTML = uc;
+	uc_doi_span.innerHTML   = uc_doi;
+	uc_title_span.innerHTML = uc_title;
 }
 
 
